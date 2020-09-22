@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+<body>
+<section data-name="menu" class="show">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Typing game</h1>
+                <div class="grid-buttons my-3">
+                    <a href="#play" class="btn btn-outline-primary">play</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section data-name="play">
+    <div class="container">
+        <div class="row mb-1">
+            <div class="col-12">
+                <p><span data-dynamic data-name="guess-word"></span></p>
+            </div>
+        </div>
+        <div class="row mb-4">
+            <div class="col-md-4 col-12">
+                <input class="form-control" type="text" name="user-word">
+            </div>
+        </div>
+        <div class="row mb-2">
+            <div class="col-12">
+                <p><span data-dynamic data-name="status">Ready ?</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <p>Time :<span data-name="remaining-time" data-dynamic></span> secondes</p>
+            </div>
+            <div class="col-md-4 col-12">
+                <p>Score : <span data-name="score" data-dynamic></span></p>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="typing.js" ></script>
+</body>
+</html>
